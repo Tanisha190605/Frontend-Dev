@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combined Responsive Web Demo</title>
+  <link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">MyResponsiveSite</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">Learn</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Section 1: Image Gallery -->
+    <section class="gallery fade-in">
+      <h2>Responsive Image Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/id/1015/300/200" alt="Mountain" class="blur">
+        <img src="https://picsum.photos/id/1025/300/200" alt="Dog" class="grayscale">
+        <img src="https://picsum.photos/id/1035/300/200" alt="Forest" class="sepia">
+      </div>
+    </section>
+
+    <!-- Section 2: Responsive Design Explanation -->
+    <section class="info fade-in">
+      <h2>What is Responsive Design?</h2>
+      <p>
+        Responsive web design ensures that websites adapt smoothly to different screen sizes and devices.
+        Using techniques like <strong>Flexbox</strong>, <strong>Grid</strong>, and <strong>Media Queries</strong>, elements adjust to provide the best user experience
+        whether viewed on a phone, tablet, or desktop.
+      </p>
+      <p>
+        Tools like <code>clamp()</code> make text scale elegantly, while hover effects and transitions create interactive,
+        modern interfaces.
+      </p>
+    </section>
+
+    <!-- Section 3: Cheat Sheet Preview -->
+    <section class="cheat-sheet fade-in">
+      <h2>Responsive CSS Cheat Sheet</h2>
+      <div class="cheat-grid">
+        <div class="box">
+          <h3>Filters</h3>
+          <p><code>filter: grayscale(100%);</code></p>
+        </div>
+        <div class="box">
+          <h3>Media Queries</h3>
+          <p><code>@media (max-width: 700px) { ... }</code></p>
+        </div>
+        <div class="box">
+          <h3>Typography</h3>
+          <p><code>font-size: clamp(1rem, 2vw, 2rem);</code></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 MyResponsiveSite | Contact: info@myresponsivesite.com</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fb;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Grid layout for cheat sheet */
+.cheat-sheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Box styling */
+.box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  color: #1e88e5;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+/* Hover effect */
+.box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #e3f2fd;
+}
+
+/* Responsive: Stack boxes vertically below 700px */
+@media (max-width: 700px) {
+  .cheat-sheet {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    text-align: left;
+  }
+
+  .box h2 {
+    color: #0d47a1;
+    border-bottom: 2px solid #0d47a1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .box p {
+    margin-left: 10px;
+  }
+}

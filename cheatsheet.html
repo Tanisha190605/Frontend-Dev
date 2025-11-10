@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="cheatsheet.css" />
+</head>
+<body>
+
+  <h1 class="title">Responsive CSS Cheat Sheet</h1>
+
+  <div class="cheat-sheet">
+    <div class="box">
+      <h2>Filters</h2>
+      <p>Use filters to apply effects like <code>blur()</code>, <code>grayscale()</code>, and <code>brightness()</code> on images.</p>
+      <p><strong>Example:</strong> <code>filter: grayscale(100%);</code></p>
+    </div>
+
+    <div class="box">
+      <h2>Media Queries</h2>
+      <p>Adapt layouts to different devices using breakpoints.</p>
+      <p><strong>Example:</strong> <code>@media (max-width: 600px) { ... }</code></p>
+    </div>
+
+    <div class="box">
+      <h2>Responsive Design</h2>
+      <p>Use flexible units like <code>%</code>, <code>vw</code>, and <code>em</code> to make layouts scale smoothly.</p>
+      <p><strong>Tip:</strong> Combine Flexbox or Grid with media queries for full responsiveness.</p>
+    </div>
+
+    <div class="box">
+      <h2>Typography</h2>
+      <p>Scale font sizes dynamically using <code>clamp()</code> and relative units.</p>
+      <p><strong>Example:</strong> <code>font-size: clamp(1rem, 2vw, 2rem);</code></p>
+    </div>
+  </div>
+
+</body>
+</html>
