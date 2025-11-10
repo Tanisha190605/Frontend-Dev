@@ -1,0 +1,59 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.box, .ball, .text {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+}
+
+.box {
+  background-color: teal;
+  animation: moveBox 2s ease-in-out infinite alternate;
+}
+
+.ball {
+  background-color: crimson;
+  border-radius: 50%;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.text {
+  background-color: purple;
+  animation: colorChange 3s ease-in-out infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveBox {
+  from { transform: translateX(0); }
+  to { transform: translateX(100px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+}
+
+@keyframes colorChange {
+  0% { background-color: purple; }
+  50% { background-color: orange; }
+  100% { background-color: purple; }
+}

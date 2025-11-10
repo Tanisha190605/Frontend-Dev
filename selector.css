@@ -1,0 +1,68 @@
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header, footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  padding: 20px 40px;
+}
+
+/* Element selector */
+p {
+  color: #333;
+}
+
+/* Class selector */
+.highlight {
+  background-color: #fff3cd;
+  padding: 10px;
+  border-left: 5px solid #ffc107;
+}
+
+/* ID selector */
+#unique {
+  font-weight: bold;
+  color: #d63384;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+/* Descendant combinator */
+.parent p {
+  color: #198754;
+}
+
+/* Child combinator */
+.parent > ul > li {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Adjacent sibling combinator */
+h3 + p {
+  font-style: italic;
+  color: #6f42c1;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+  background-color: #e2e3e5;
+  padding: 8px;
+  border-left: 4px solid #adb5bd;
+  margin-top: 10px;
+}

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+section {
+  width: 200px;
+  padding: 20px;
+  background-color: #f8bbd0;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.default-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: #80deea;
+}
+
