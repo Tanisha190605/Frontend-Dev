@@ -1,0 +1,40 @@
+/* Attribute selector */
+input[type="text"] {
+  border: 2px solid blue;
+}
+
+/* Starts with https */
+a[href^="https"] {
+  color: green;
+  text-decoration: underline;
+}
+
+/* Pseudo-classes */
+li:nth-child(2) {
+  color: red;
+}
+
+input:focus {
+  outline: 2px solid orange;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+/* Pseudo-elements */
+p::before {
+  content: "Note: ";
+  font-weight: bold;
+}
+
+p::after {
+  content: " ✔";
+  color: green;
+}
+
+/* Combinators */
+main > ul { border: 1px solid black; }       /* Direct child */
+ul + p { background: #eee; }                 /* Adjacent sibling */
+ul ~ p { font-style: italic; }               /* General sibling */
+main p strong { color: purple; }             /* Descendant */

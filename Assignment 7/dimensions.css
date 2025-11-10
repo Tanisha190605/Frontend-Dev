@@ -1,0 +1,47 @@
+body, html {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Different size units */
+.box1 {
+  width: 150px;
+  height: 100px;
+  background-color: teal;
+}
+
+.box2 {
+  width: 30%;
+  min-height: 120px;
+  background-color: tomato;
+}
+
+.box3 {
+  width: 10em;
+  height: 30vh;
+  max-width: 300px;
+  background-color: darkorchid;
+}

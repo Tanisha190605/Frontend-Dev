@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eef;
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-model {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid blue;
+  margin: 30px;
+  background: white;
+  outline: 2px dashed red;
+  box-sizing: border-box;
+}
