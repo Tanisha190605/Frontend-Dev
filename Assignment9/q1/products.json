@@ -1,0 +1,12 @@
+[
+    {
+        "name": "iPhone 15",
+        "price": 79999,
+        "image": "https://example.com/iphone.jpg"
+    },
+    {
+        "name": "AirPods Pro",
+        "price": 24999,
+        "image": "https://example.com/airpods.jpg"
+    }
+]
